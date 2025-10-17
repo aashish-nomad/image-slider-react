@@ -1,0 +1,31 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.img-slider-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.img-slider-button {
+  all: unset;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+  transition: .32s background-color ease-in-out;
+}
+
+.img-slider-button:hover {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.img-slider-button > * {
+  stroke: #fff;
+  fill: #000;
+}
