@@ -26,7 +26,8 @@
   transition: .32s background-color ease-in-out;
 }
 
-.img-slider-button:hover {
+.img-slider-button:hover,
+.img-slider-button:focus-visible {
   background-color: rgba(0, 0, 0, .4);
 }
 
@@ -43,7 +44,8 @@
   transition: .32s scale ease-in-out;
 }
 
-.image-slider-dot-button:hover {
+.image-slider-dot-button:hover,
+.image-slider-dot-button:focus-visible {
   scale: 1.2;
 }
 
@@ -52,4 +54,9 @@
   fill: #000;
   height: 100%;
   width: 100%;
+}
+
+.img-slider-button:focus-visible,
+.image-slider-dot-button:focus-visible {
+  outline: auto;
 }
